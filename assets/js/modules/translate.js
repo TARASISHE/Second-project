@@ -212,8 +212,8 @@ const menuSublang = document.querySelector('.menu__sub-lang');
 
 
 menuSublang.addEventListener("click", (e) => {
-    console.log(e.target);
-    const lang = e.target.closest('LI').getAttribute('data-lang');
+    console.log(menuSublang);
+    const lang = e.target.closest('A').getAttribute('data-lang');
     changeLang(lang)
 });
 
